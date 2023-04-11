@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(18, 18, 18);
+   
+}
+
+
+
+li, a, button{
+    font-family: 'Golos Text', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.logo{
+    cursor: pointer; 
+    margin-right: auto;
+    width: 85px;
+
+}
+
+
+.toggle-button{
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px
+}
+
+
+.nav__links{
+    list-style: none;
+    display:flex
+    
+}
+
+
+
+
+.nav__links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+
+.nav__links li{
+    display: inline-block;
+    padding: 0px 20px;
+
+}
+
+
+
+.nav__links li a{
+    transition: all 0.3s ease 0s;
+}
+
+
+.nav__links li a:hover{
+    color: #FF0046;
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: rgb(255, 255, 255);
+    border:none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+
+}
+
+
+button{
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: rgba(255, 0, 70, 1);
+    border:none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    
+
+}
+
+button:hover{
+    background-color: rgba(0, 255, 120, 0.8);
+
+}
+
+
+/*Headings*/
+
+.Headings{
+    font-family: 'Noto Serif JP', serif;
+    font-size: 50px;
+    color: aliceblue;
+    text-align: center;
+}
+
+.about{
+    font-family: 'Noto Serif JP', serif;
+    text-align: center;
+    font-size: 20px;
+    color: white
+
+}
+
+.foto{
+    width: 90%;
+    
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+
+.judul{
+    font-family: 'Outfit', sans-serif;
+    font-size: 80px;
+    color: #FF0046;
+    text-align: center;
+}
+
+
+@media(max-width: 787px){
+    .toggle-button{
+        display: flex;
+
+    }
+
+    .nav__links{
+    display: none;
+   
+    align-items: center;
+    }
+
+
+    .nav__links.active{
+        display: flex;
+
+    }
+
+    .navbar{
+        flex-direction: column;
+        align-items: flex-end;
+        
+    }
+
+    *{
+        flex-direction: column;
+    }
+
+    .nav__links ul{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar__links li{
+        margin-right: 20px;
+        text-align: center;
+        margin: 0 auto;
+        ;
+    }
+
+    .cta{
+        display: none;
+    }
+
+    .logo{
+        margin: auto;
+        position:relative;
+        top: -1.2rem;
+    }
+
+
+    li{
+        flex-direction: column;
+    }
+
+   .nav__links li a:hover{
+    color: #FF0046;
+    margin-left: 0;
+
+
+    padding: 0;
+    background: 0;
+    border:none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+
+    
+
+   }
+    
+
+
+}
